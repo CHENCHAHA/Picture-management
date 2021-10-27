@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .he {
+        width: 800px;
+        margin: 0 auto;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    .he ul li {
+        float: left;
+        width: 200px;
+        height: 100px;
+        background-color: aqua;
+        margin: 10px;
+    }
+    
+    .hezi {
+        width: 890px;
+        height: 300px;
+        background-color: blue;
+        margin: 0 auto;
+    }
+    
+    .clearfix:before,
+    .clearfix:after {
+        display: table;
+        content: "";
+        /*不用有内容也可以*/
+    }
+    
+    .clearfix:after {
+        clear: both;
+    }
+    
+    .clearfix {
+        *zoom: 1;
+    }
+</style>
+
+<body>
+    <div class="da  clearfix">
+        <div class="he  clearfix">
+            <ul class=" clearfix">
+                <!-- 只要给浮动的盒子的父亲盒子加类就可以，随便什么父亲 -->
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="hezi"></div>
+</body>
+
+</html>

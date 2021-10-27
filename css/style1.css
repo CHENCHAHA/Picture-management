@@ -1,0 +1,424 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?o4i3mj');
+    src: url('../fonts/icomoon.eot?o4i3mj#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?o4i3mj') format('truetype'), url('../fonts/icomoon.woff?o4i3mj') format('woff'), url('../fonts/icomoon.svg?o4i3mj#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.z {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+button {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.zuida {
+    width: 98%;
+    height: 480px;
+    background-color: #ccc;
+}
+
+header {
+    z-index: 9;
+    height: 84px;
+}
+
+.diyi {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 480px;
+}
+
+.diyi img {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    float: left;
+    margin-left: 21px;
+    margin-top: 10px;
+    width: 100%;
+    height: 74px;
+    font-size: 0;
+    z-index: 999;
+}
+
+.logo a {
+    font-size: 0;
+}
+
+.logo h1 a img {
+    display: block;
+    width: 223px;
+    height: 74px;
+}
+
+li {
+    list-style: none;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    left: 270px;
+}
+
+.nav ul li {
+    float: left;
+}
+
+.nav ul li a {
+    font-family: 'icomoon';
+    text-align: center;
+    font-size: 17px;
+    line-height: 84px;
+    margin-left: 40px;
+    color: #fff;
+}
+
+.nav ul li a:hover {
+    color: #a33131;
+}
+
+.denglu {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.denglu .into {
+    float: left;
+    display: block;
+    line-height: 35px;
+    text-align: center;
+    width: 80px;
+    font-size: 17px;
+    height: 35px;
+    color: #fff;
+    margin-top: 26px;
+    margin-right: 20px;
+}
+
+.denglu .in {
+    float: left;
+    display: block;
+    line-height: 35px;
+    text-align: center;
+    width: 80px;
+    font-size: 14px;
+    height: 35px;
+    color: #fff;
+    margin-top: 26px;
+    margin-right: 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+.denglu .into:hover {
+    color: #a33131;
+}
+
+.denglu .in:hover {
+    background-color: #fff;
+    color: #000000;
+}
+
+.search {
+    z-index: 999;
+    position: absolute;
+    top: 300px;
+    left: 350px;
+    width: 800px;
+    height: 54px;
+}
+
+.zuosou input {
+    float: left;
+    width: 670px;
+    height: 54px;
+    font-size: 17px;
+    padding-left: 30px;
+    border-top-left-radius: 27px;
+    border-bottom-left-radius: 27px;
+    outline: none;
+    border: 0;
+}
+
+.search .zuosou input::-webkit-input-placeholder {
+    font-size: 15px;
+}
+
+.search .zuosou input {
+    border-right: 0;
+}
+
+.yousou button {
+    font-family: 'icomoon';
+    float: right;
+    width: 100px;
+    height: 54px;
+    font-size: 18px;
+    border-top-right-radius: 27px;
+    border-bottom-right-radius: 27px;
+    color: #fff;
+    background-color: #f84949;
+}
+
+.zhucelan {
+    height: 300px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 16px 0 rgb(0 0 0 / 7%);
+}
+
+.zhucelan ul li .di {
+    font-family: 'icomoon';
+    font-size: 66px;
+    text-align: center;
+}
+
+.zhucelan ul:first-child {
+    margin-left: 67px;
+}
+
+.zhucelan ul li {
+    font-family: 'icomoon';
+    float: left;
+    text-align: center;
+    width: 230px;
+    height: 150px;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.zhucelan ul li p {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.zhucelan a {
+    display: inline-block;
+    border: none;
+    width: 275px;
+    height: 50px;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-left: 465px;
+    background-color: #f84949;
+}
+
+.zhucelan a:hover {
+    background-color: #ad3232;
+}
+
+.zhanshilan {
+    position: relative;
+    width: 1200px;
+    height: 800px;
+    margin: 20px auto;
+}
+
+.zhanshilan ul li {
+    display: block;
+    overflow: hidden;
+    margin-top: 20px;
+    float: left;
+    width: 575px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.zhanshilan ul li img {
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+    border-radius: 10PX;
+}
+
+.zhanshilan ul li video {
+    object-fit: cover;
+    transition: all 1s;
+    width: 574px;
+    height: 300px;
+    border-radius: 10PX;
+}
+
+.zhanshilan ul li:nth-child(n+3) {
+    margin-top: 100px;
+}
+
+.zhanshilan ul li:nth-child(even) {
+    float: right;
+    border-radius: 10px;
+}
+
+.zhanshilan ul li .tu1 {
+    position: absolute;
+    top: 290px;
+    right: 790px;
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    box-shadow: 0 4px 6px 0 rgb(0 0 0 / 6%);
+    background-color: #fff;
+}
+
+.zhanshilan ul li .tu2 {
+    position: absolute;
+    top: 290px;
+    right: 152px;
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    box-shadow: 0 4px 6px 0 rgb(0 0 0 / 6%);
+    background-color: #fff;
+}
+
+.zhanshilan ul li .tu3 {
+    position: absolute;
+    bottom: 51px;
+    right: 790px;
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    box-shadow: 0 4px 6px 0 rgb(0 0 0 / 6%);
+    background-color: #fff;
+}
+
+.zhanshilan ul li .tu4 {
+    position: absolute;
+    bottom: 51px;
+    right: 152px;
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    box-shadow: 0 4px 6px 0 rgb(0 0 0 / 6%);
+    background-color: #fff;
+}
+
+.zhanshilan .x h3 {
+    color: red;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.zhanshilan .x p {
+    color: #666666;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.zhanshilan ul li img:hover {
+    transform: scale(1.1);
+}
+
+.zhanshilan ul li video:hover {
+    transform: scale(1.1);
+}
+
+.zhanshilan ul li .x:hover {
+    background-color: #f84949;
+}
+
+.zhanshilan ul li .x:hover p {
+    color: white;
+}
+
+.zhanshilan ul li .x:hover h3 {
+    color: white;
+}
+
+.gongsilan {
+    width: 100%;
+    height: 190px;
+    background-color: #333333;
+}
+
+.gongsilan ul li {
+    float: left;
+    color: #6a6a6a;
+    font-size: 12px;
+}
+
+.gongsilan ul li:nth-child(even) {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.gongsilan ul li a {
+    display: inline-block;
+    color: #6a6a6a;
+}
+
+.gongsilan p,
+a {
+    color: #6a6a6a;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.zuoxin {
+    width: 900px;
+    height: 100px;
+    padding-top: 52px;
+    margin-left: 50px;
+}
+
+.gongsilan .tiaozheng {
+    margin-left: -1px;
+}
+
+.gongsilan ul li a:hover {
+    color: cornsilk;
+}
+
+.gongsilan .tiaozheng a:hover {
+    color: cornsilk;
+}

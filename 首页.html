@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CHENC的工作室,旗下摄影展览，摄影交流，图片，视频分享网站" />
+    <meta name="keywords" content="图片，视频，摄影，交流，分享，技巧，图片及视频上传展览" />
+    <title>CHENC的工作室</title>
+    <link rel="shortcut icon" href="images/chenc.png" />
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <!-- 开头制作 -->
+    <div class="zuida">
+        <div class="diyi">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/jp7.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/jp2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/jp5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/jp1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/jp6.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/jp9.jpg" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next" style="display: none;"></div>
+                <div class="swiper-button-prev" style="display: none;"></div>
+            </div>
+            <script>
+                $(".diyi").on("mouseover", function() {
+                    $(".swiper-button-next,.swiper-button-prev").css("display", "block");
+                })
+                $(".diyi").on("mouseout", function() {
+                    $(".swiper-button-next,.swiper-button-prev").css("display", "none");
+                })
+            </script>
+        </div>
+        <header class="w">
+            <div class="logo">
+                <h1>
+                    <a href="首页.html" title="CHENC的工作室">CHENC的工作室<img src="images/logo2.png" alt=""></a>
+                </h1>
+                <div class="nav">
+                    <ul>
+                        <li><a href="首页.html">首页</a></li>
+                        <li><a href="tupian.html">图片</a></li>
+                        <li><a href="shiping.html">视频</a></li>
+                        <li><a href="music.html">音乐</a></li>
+                        <Li><a href="#">供图</a></Li>
+                    </ul>
+                </div>
+                <div class="denglu">
+                    <a href="register.html" style="z-index: 999;" class="into">注册</a>
+                    <a href="denglu.html" class="in">登录</a>
+                </div>
+            </div>
+            <div class="search">
+                <div class="zuosou">
+                    <input type="text" placeholder="查找一下我喜欢的图片">
+                </div>
+                <div class="yousou">
+                    <button></button>
+                </div>
+            </div>
+        </header>
+    </div>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            simulateTouch: false,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            }
+        });
+    </script>
+    <!-- 视频展示 -->
+    <div class="zhucelan z">
+        <ul>
+            <li>
+                <p class="di"></p>
+                <p>全球高端视觉素材</p>
+                <p>包含图片、视频、音乐、字体</p>
+            </li>
+            <li>
+                <p class="di"></p>
+                <p>先进的人工智能技术</p>
+                <p>图像识别、自动标签等智能服务</p>
+            </li>
+            <li>
+                <p class="di"></p>
+                <p>灵活多样的授权方式材</p>
+                <p>各种套餐与行业解决方案</p>
+            </li>
+            <li>
+                <p class="di"></p>
+                <p>高清无水印小样图</p>
+                <p>先授权后使用，请联系客服人员</p>
+            </li>
+        </ul>
+        <a href="register.html">立即注册</a>
+    </div>
+    <div class="zhanshilan">
+        <ul>
+            <li>
+                <a href="#"><img src="images/zhan1.jpg" alt="">
+                    <div class="tu1 x">
+                        <h3>图片</h3>
+                        <p>-全世界优质图片应有尽有-</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#"><video src="images/zhan2.mp4" autoplay="autoplay" loop="loop" muted></video>
+                    <div class="tu2 x">
+                    <h3>视频</h3>
+                    <p>-为你的项目添砖加瓦-</p>
+                </div>
+            </a>
+            </li>
+            <li>
+                <a href="#"><img src="images/zhan3.jpg" alt="">
+                    <div class="tu3 x">
+                        <h3>矢量图</h3>
+                        <p>-矢量图，插画，漫画，风格-</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#"><img src="images/zhan4.jpg" alt="">
+                    <div class="tu4 x">
+                        <h3>音乐</h3>
+                        <p>-各地绝版音乐，付费音乐-</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="gongsilan">
+        <div class="zuoxin">
+            <ul>
+                <li><a href="#">联系我们</a></li>
+                <li>|</li>
+                <li><a href="#">招聘信息</a></li>
+                <li>|</li>
+                <li><a href="#">授权信息</a></li>
+                <li>|</li>
+                <li><a href="#">网络条款</a></li>
+                <li>|</li>
+                <li><a href="#">获取更多</a></li>
+            </ul><br>
+            <p class="tiaozheng">© 陈同学视觉科技有限公司 All Rights Reserved <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer nofollow" class="rZ7vR">&nbsp;&nbsp;&nbsp;苏ICP备19044258号-25</a><a href="https://static.vcg.com/file/%E6%B1%89%E5%8D%8E%E6%98%93%E7%BE%8E%E8%A7%86%E8%A7%89%E7%A7%91%E6%8A%80ICP%E8%AE%B8%E5%8F%AF%E8%AF%8120191206.pdf"
+                    target="_blank" rel="noopener noreferrer">&nbsp;&nbsp;&nbsp;苏B2-20191025</a>
+                <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502038310" rel="noopener noreferrer nofollow" target="_blank"><img alt="gov" style="margin-right:6px;width:17px;height:17px;vertical-align:sub" src="https://alifei00.cfp.cn/static/img/icons/BA.png">公网安备 11010502038310号</a>
+            </p>
+            <p>违法和不良信息举报电话：0000-100-9999 举报邮箱：jubao@chenchen.com</p>
+            <p>地址：湖南省湘潭市雨湖区湖南科技大学</p>
+        </div>
+    </div>
+</body>
+
+</html>

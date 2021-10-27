@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片上传</title>
+    <link rel="stylesheet" href="../../css/uptupian.css">
+</head>
+
+<body>
+    <div class="upload">
+        <label for="">请上传图片</label>
+        <input type="file" id="file">
+    </div>
+    <div class="box" id="box"></div>
+    <script type="text/javascript">
+        var file = document.getElementById("file");
+        file.onchange = function() {
+            var formDate = new FormData();
+            formDate.append('attrName', this.files[0]);
+            var xhr = new XMLHttpRequest();
+            xhr.open('post', 'http://127.0.0.1:8000/upload');
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.send(formDate);
+            xhr.onload = function() {
+                if (xhr.status == 200) {
+                    console.log(xhr.response);
+                }
+            }
+
+        }
+    </script>
+</body>
+
+</html>

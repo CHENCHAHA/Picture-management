@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .w{
+        margin: 100px auto;
+    }
+    .hezi{
+        width: 800px;
+        height: 50px;
+        
+    }
+    input{
+        float: right;
+        width: 230px;
+        height: 50px;
+        outline: none;
+        padding-left: 10px;
+        border: 2px solid red;
+        border-right: 0;
+        transition: all 1s;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    
+    }
+    .hezi:hover input{
+        /* animation: move 1s  alternate forwards; */
+        width: 600px;
+    }
+    /* button:hover{
+        width: 80px;
+    } */
+    button{
+        float: right;
+        width: 69px;
+        height: 54px;
+        border: none;
+        background-color: red;
+        color: #fff;
+        /* transition: all 1s; */
+        font-size: 14px;
+    }
+    /* @keyframes move{
+        0%{
+            
+        }
+        100%{
+            width: 600px;
+        }
+    } */
+</style>
+<body>
+    <div class="hezi w">
+        <button>搜索</button>
+    <input type="text" placeholder="有点东西哦">
+    
+</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页</title>
+    <link rel="shortcut icon" href="images/chenc.png" />
+    <link rel="stylesheet" href="css/denglu.css">
+</head>
+
+<body>
+    <div class="logo">
+        <a href="首页.html"><img src="images/logo2.png"></a>
+    </div>
+    <div class="wenzi1">
+        <h1>用摄影</h1>
+        <p>让绚丽的世界展现在你眼前</p>
+    </div>
+    <div class="bang">
+        <h4><a href="#">帮助中心</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;<em></em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2021CHENC
+        </h4>
+    </div>
+    <div class="zhucekuang">
+        <h1>欢迎登录</h1>
+        <p>没有账号？<a href="register.html">注册</a></p>
+        <div class="zhucexia">
+            <form action="">
+                <ul>
+                    <li><label for="">用户名</label><input type="text" placeholder="设置用户名" id="yonghu">
+                        <p class="tishi" id="ti">请重新输入，用户名仅支持6-16位字符</p>
+                    </li>
+                    <script>
+                        var tishi = document.getElementById('ti');
+                        var tex = document.getElementById('yonghu');
+                        tex.onblur = function() {
+                            if (tex.value.length < 6 || tex.value.length > 16) {
+                                /* console.log('cuowu'); */
+                                tishi.style.display = 'block';
+                                tishi.innerText = '请重新输入，用户名仅支持6-16位字符';
+                                tishi.style.color = 'red';
+                            } else {
+                                tishi.style.display = 'block';
+                                tishi.style.color = '#2e79fb';
+                                tishi.innerText = '正确，该输入的用户名可用';
+                            }
+                        }
+                        tex.addEventListener('blur', function() {
+                            if (tex.value == '') {
+                                tishi.style.display = 'none';
+                            }
+
+                        })
+                    </script>
+                    <li><label for="">密码</label><input type="password" placeholder="请输入登录密码" id="mimakuang">
+                        <div id="ye"></div>
+                        <script>
+                            var eye = document.getElementById('ye');
+                            var mima = document.getElementById('mimakuang');
+                            /* var flage = 0;
+                            eye.onclick = function() {
+                                if (flage == 0) {
+                                    mima.type = 'text';
+                                    eye.innerHTML = '';
+                                    flage = 1;
+                                } else {
+                                    mima.type = 'password';
+                                    eye.innerHTML = '';
+                                    flage = 0;
+                                }
+                            } */
+                            eye.addEventListener('click', function() {
+                                mima.type = 'text';
+                                eye.innerHTML = '';
+                            })
+                            eye.addEventListener('mouseleave', function() {
+                                mima.type = 'password';
+                                eye.innerHTML = '';
+                            })
+                        </script>
+                    </li>
+                    <li class="zuihou"><label for="">验证码</label><input type="text" placeholder="请输入验证码"><button>获取验证码</button></li>
+                    <li class="zuizuihou"><input type="submit" value="登录"></li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
